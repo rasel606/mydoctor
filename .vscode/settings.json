@@ -1,0 +1,26 @@
+{
+    "emmet.useInlineCompletions": true,
+    "emmet.showSuggestionsAsSnippets": true,
+    "emmet.triggerExpansionOnTab": true,
+    "files.associations": {"*html": "html"},
+    
+    "auto-close-tag.excludedTags": [
+
+        "area",
+        "base",
+        "br",
+        "col",
+        "command",
+        "embed",
+        "hr",
+        "img",
+        "input",
+        "keygen",
+        "link",
+        "meta",
+        "param",
+        "source",
+        "track",
+        "wbr"
+    ]
+}
