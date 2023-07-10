@@ -12,7 +12,7 @@ const MyAppoinment = () => {
 
     useEffect(() => {
         if (user) {
-            fetch(`https://mysterious-ocean-90913.herokuapp.com/mybooking?patientEmail=${user.email}`, {
+            fetch(`https://doctors-backend.vercel.app//mybooking?patientEmail=${user.email}`, {
                 method: 'GET',
                 headers: {
                     'authorization': `bearer ${localStorage.getItem('accessToken')}`

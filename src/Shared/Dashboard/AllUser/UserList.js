@@ -8,7 +8,7 @@ const UserList = (props) => {
   console.log(user);
 
   const makeAdmin = () => {
-    fetch(`https://mysterious-ocean-90913.herokuapp.com/user/admin/${email}`, {
+    fetch(`https://doctors-backend.vercel.app//user/admin/${email}`, {
       method: "PUT",
       headers: {
         authorization: `bearer ${localStorage.getItem("accessToken")}`,

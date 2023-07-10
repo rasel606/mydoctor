@@ -13,7 +13,7 @@ const AvailableService = ({ date }) => {
     // const [services, setServices] = useState([])
     const [treatment, setTreatment] = useState(null)
 
-    const { data: services, isLoading, refetch } = useQuery(['available', formattedDate], () => fetch(`https://mysterious-ocean-90913.herokuapp.com/available?date=${formattedDate}`)
+    const { data: services, isLoading, refetch } = useQuery(['available', formattedDate], () => fetch(`https://doctors-backend.vercel.app//available?date=${formattedDate}`)
         .then(res => res.json()))
 
     if (isLoading) {
@@ -22,7 +22,7 @@ const AvailableService = ({ date }) => {
 
 
     // useEffect(() => {
-    //     const url =`https://mysterious-ocean-90913.herokuapp.com/available?date=${formattedDate}`
+    //     const url =`https://doctors-backend.vercel.app//available?date=${formattedDate}`
     //     fetch(url)
     //         .then(res => res.json())
     //         .then(data => setServices(data))

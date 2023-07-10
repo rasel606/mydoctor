@@ -27,7 +27,7 @@ const BookingModal = (props) => {
 
         }
 
-        fetch('https://mysterious-ocean-90913.herokuapp.com/booking', {
+        fetch('https://doctors-backend.vercel.app//booking', {
             method: 'POST',
             headers: {
                 'content-type': 'application/json'

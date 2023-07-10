@@ -7,7 +7,7 @@ import Loding from '../../Loding/Loding';
 
 const AddDoctors = () => {
     const { register, formState: { errors }, handleSubmit, reset } = useForm();
-    const { data: services, isLoading } = useQuery('services', () => fetch('https://mysterious-ocean-90913.herokuapp.com/service').then(res => res.json()))
+    const { data: services, isLoading } = useQuery('services', () => fetch('https://doctors-backend.vercel.app//service').then(res => res.json()))
 
     const imageStorageKey = '8c698e4722e5e0a6b4f659ee9b63f7f5'
 
@@ -33,7 +33,7 @@ const AddDoctors = () => {
                     }
 
                     //send to your database
-                    fetch(`https://mysterious-ocean-90913.herokuapp.com/doctors`, {
+                    fetch(`https://doctors-backend.vercel.app//doctors`, {
                         method: 'POST',
                         headers: {
                             'content-type': 'application/json',
